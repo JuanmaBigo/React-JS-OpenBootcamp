@@ -1,0 +1,1 @@
+This repository it's going to be used on my ReactJS learning path, hand in hand with OpenBootcamp
