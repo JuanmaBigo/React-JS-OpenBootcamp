@@ -44,7 +44,7 @@ function App() {
           
         </Ejemplo4> */}
 
-        {/* <GreetingStyled name = "Juan"></GreetingStyled> */}
+        {/* <GreetingStyled name = "Juan"></GreetingStyled>  */}
 
         {/* <AllCycles></AllCycles>  */}
         {/* <Clock></Clock> */}
