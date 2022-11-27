@@ -59,7 +59,7 @@ const TaskListComponent = () => {
                     </table>
                 </div>
             </div>
-            
+
             {/* <TaskComponent task={defaultTask}></TaskComponent> */}
         </div>
     );
