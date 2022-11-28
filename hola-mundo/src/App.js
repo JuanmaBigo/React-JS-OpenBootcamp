@@ -13,21 +13,20 @@ import GreetingStyled from './components/pure/greetingStyled';
 import AllCycles from './hooks/Lifecycle/AllCycles';
 import Clock from './Ejercicios/Ejercicios-4-5-6/functionalComponent';
 import ClockClass from './Ejercicios/Ejercicios-4-5-6/classComponent';
+import Father from './components/container/father';
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      {/* <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" /> */}
         {/* Componente propio Greeting.jsx */}
         {/* <Greeting name="JUAN"></Greeting> */}
 
         {/* Componente de ejemplo funcional */}
         {/* <GreetingF name="Juan"></GreetingF> */}
 
-        {/* Componente de listado de tareas */}
-        {/* <TaskListComponent></TaskListComponent> */}
 
         {/* Componente de contactos ejercicio-1-2-3 */}
         {/* <ContactComponent></ContactComponent> */}
@@ -44,13 +43,22 @@ function App() {
           
         </Ejemplo4> */}
 
-        {/* <GreetingStyled name = "Juan"></GreetingStyled>  */}
+        {/* <GreetingStyled name = "Juan"></GreetingStyled> */}
 
         {/* <AllCycles></AllCycles>  */}
         {/* <Clock></Clock> */}
         {/* <ClockClass></ClockClass> */}
 
-      </header>
+        {/* <GreetingStyled name = "Juan"></GreetingStyled> */}
+      
+      {/* </header> */}
+
+      {/* Componente de listado de tareas */}
+      {/* <TaskListComponent></TaskListComponent> */}
+
+      {/* Gestion de eventos */}
+      <Father></Father>
+      
     </div>
   );
 }
