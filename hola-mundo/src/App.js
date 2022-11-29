@@ -42,9 +42,8 @@ function App() {
           <h3>asdf</h3>
           
         </Ejemplo4> */}
-
         {/* <GreetingStyled name = "Juan"></GreetingStyled> */}
-
+        
         {/* <AllCycles></AllCycles>  */}
         {/* <Clock></Clock> */}
         {/* <ClockClass></ClockClass> */}
