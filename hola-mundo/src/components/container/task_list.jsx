@@ -39,8 +39,30 @@ const TaskListComponent = () => {
     }, [tasks]);
 
 
-    const changeCompleted = (id) => {
-        console.log('Change state of task with id: ' + id);
+    function completeTask(task) {
+        console.log('Complete this task', task);
+        const index = tasks.indexOf(task);
+        const tempTasks = [...tasks];
+        tempTasks[index].completed = !tempTasks[index].completed;
+        // Update the state of the component and update the iteration of tasks with the new list of tasks
+        // in order to update the view
+        setTasks(tempTasks);
+    }
+
+    function removeTask(task) {
+        console.log('Delete this task', task);
+        const index = tasks.indexOf(task);
+        const tempTasks = [...tasks];
+        tempTasks.splice(index, 1);
+        setTasks(tempTasks)
+    }
+
+    function addTask(task) {
+        console.log('Add this task', task);
+        const index = tasks.indexOf(task);
+        const tempTasks = [...tasks];
+        tempTasks.push(task);
+        setTasks(tempTasks)
     }
 
     return (
@@ -69,15 +91,20 @@ const TaskListComponent = () => {
                             {/* iterar sobre una lista de tareas */}
                             {tasks.map((task, index) => {
                                 return (
-                                    <TaskComponent key={index} task={task} />
+                                    <TaskComponent
+                                        key={index}
+                                        task={task}
+                                        complete={completeTask}
+                                        remove={removeTask}
+                                    />
                                 )
                             })}
                         </tbody>
                     </table>
                 </div>
-                <TaskForm></TaskForm>
             </div>
 
+            <TaskForm add={addTask}></TaskForm>
             {/* <TaskComponent task={defaultTask}></TaskComponent> */}
         </div>
     );

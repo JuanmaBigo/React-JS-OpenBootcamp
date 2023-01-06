@@ -52,12 +52,13 @@ function App() {
       
       {/* </header> */}
 
-      {/* Componente de listado de tareas */}
-      {/* <TaskListComponent></TaskListComponent> */}
 
       {/* Gestion de eventos */}
-      <Father></Father>
+      {/* <Father></Father> */}
       
+      {/* Componente de listado de tareas */}
+      <TaskListComponent></TaskListComponent>
+
     </div>
   );
 }
